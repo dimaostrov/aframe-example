@@ -15,7 +15,6 @@ class VRScene extends React.Component {
        material={{color: x[1] > 100 ? 'red' : 'blue'}} 
        position={{x: i, y: i*2, z: -i}}/>
     });
-    console.log(spheres);
     return (
       <Scene>
         {spheres}
