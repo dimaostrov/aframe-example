@@ -2,9 +2,11 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 import { Button, Container } from 'rebass'
+import { VelocityTransitionGroup } from 'velocity-react'
 
 const IndexPage = () => (
-  <Container bg='navy' color='seashell' m={0} p={8} width={1/5}> 
+  <VelocityTransitionGroup enter={{animation: "slideDown"}} duration={50000} runOnMount={true}>
+  <Container bg='navy' color='seashell' m={0} p={8} width={3/5}> 
     <h1>Hi people</h1>
     <p>Here's a demo in React, A-Frame, Rebass that tracks crypto.</p>
     <Link style={{
@@ -16,6 +18,7 @@ const IndexPage = () => (
     </Button>
     </Link>
   </Container>
+  </VelocityTransitionGroup>
 )
 
 export default IndexPage
