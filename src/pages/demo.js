@@ -10,7 +10,7 @@ import data from '../data/countries.json';
 class VRScene extends React.Component {
   render () {
     const spheres = Object.entries(data.countries_msg_vol).map( (x, i) => {
-      return <Entity geometry={{primitive: 'sphere'}} material={{color: 'red'}} position={{x: 0, y: i*2, z: -5}}/>
+      return <Entity geometry={{primitive: 'sphere'}} material={{color: 'red'}} position={{x: i + 2, y: i*2, z: i*2}}/>
     });
     console.log(spheres);
     return (

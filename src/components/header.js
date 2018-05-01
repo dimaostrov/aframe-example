@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 import { Toolbar } from 'rebass'
+import { VelocityTransitionGroup } from 'velocity-react';
 
 const Header = ({ siteTitle }) => (
   <Toolbar
@@ -17,6 +18,8 @@ const Header = ({ siteTitle }) => (
         padding: '1.45rem 1.0875rem'
       }}
       >
+      <VelocityTransitionGroup enter={{animation: "fadeIn", rotateZ: '45deg'}} duration={1000} runOnMount={true}>
+
       <h1 style={{ margin: 0 }}>
         <Link
           to="/"
@@ -28,6 +31,7 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
+      </VelocityTransitionGroup>
     </div>
   </Toolbar>
 )

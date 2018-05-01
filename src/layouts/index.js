@@ -5,6 +5,7 @@ import { Provider } from 'rebass'
 import { injectGlobal } from 'styled-components'
 
 import Header from '../components/header'
+import { VelocityTransitionGroup } from 'velocity-react'
 import { Banner } from 'rebass';
 //import './index.css'
 
@@ -23,7 +24,7 @@ const Layout = ({ children, data }) => (
       ]}
     />
     <Provider>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header m={'auto'} siteTitle={data.site.siteMetadata.title} />
       <Banner bg='black'>
         {children()}
       </Banner>
