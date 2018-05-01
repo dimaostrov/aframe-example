@@ -1,10 +1,12 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import { Toolbar } from 'rebass'
+
 const Header = ({ siteTitle }) => (
-  <div
+  <Toolbar
     style={{
-      background: 'rebeccapurple',
+      background: 'black',
       marginBottom: '1.45rem',
     }}
   >
@@ -12,9 +14,9 @@ const Header = ({ siteTitle }) => (
       style={{
         margin: '0 auto',
         maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
+        padding: '1.45rem 1.0875rem'
       }}
-    >
+      >
       <h1 style={{ margin: 0 }}>
         <Link
           to="/"
@@ -27,7 +29,7 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
     </div>
-  </div>
+  </Toolbar>
 )
 
 export default Header

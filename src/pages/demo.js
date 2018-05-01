@@ -4,13 +4,18 @@ import 'aframe';
 import 'aframe-particle-system-component';
 import { Entity, Scene } from 'aframe-react';
 
+import data from '../data/countries.json';
+
 
 class VRScene extends React.Component {
   render () {
+    const spheres = Object.entries(data.countries_msg_vol).map( (x, i) => {
+      return <Entity geometry={{primitive: 'sphere'}} material={{color: 'red'}} position={{x: 0, y: i*2, z: -5}}/>
+    });
+    console.log(spheres);
     return (
       <Scene>
-        <Entity geometry={{primitive: 'box'}} material={{color: 'red'}} position={{x: 0, y: 0, z: -5}}/>
-        <Entity particle-system={{preset: 'snow'}}/>
+        {spheres}
         <Entity light={{type: 'point'}}/>
         <Entity gltf-model={{src: 'virtualcity.gltf'}}/>
         <Entity text={{value: 'Hello, WebVR!'}}/>

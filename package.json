@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "aframe example",
+  "description": "Aframe example",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Dmitiy Ostrovskiy <dmtrostrovskiy@gmail.com>",
   "dependencies": {
     "aframe": "^0.8.2",
     "aframe-particle-system-component": "^1.0.11",
