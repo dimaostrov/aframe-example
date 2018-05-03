@@ -1,20 +1,28 @@
 {
-  "name": "aframe example",
+  "name": "aframe-example",
   "description": "Aframe example",
   "version": "1.0.0",
   "author": "Dmitiy Ostrovskiy <dmtrostrovskiy@gmail.com>",
   "dependencies": {
     "aframe": "^0.8.2",
+    "aframe-layout-component": "^4.3.1",
     "aframe-particle-system-component": "^1.0.11",
     "aframe-react": "^4.4.0",
     "cheerio": "^1.0.0-rc.2",
+    "child_process": "^1.0.2",
+    "fs": "0.0.1-security",
     "gatsby": "^1.9.247",
     "gatsby-link": "^1.6.40",
     "gatsby-plugin-react-helmet": "^2.0.10",
     "gatsby-plugin-react-next": "^1.0.11",
+    "global": "^4.3.2",
+    "net": "^1.0.2",
     "react-helmet": "^5.2.0",
+    "react-no-ssr": "^1.1.0",
     "rebass": "^2.0.0-0",
-    "velocity-react": "^1.4.1"
+    "tls": "0.0.1",
+    "velocity-react": "^1.4.1",
+    "window": "^4.2.5"
   },
   "keywords": [
     "gatsby"
@@ -24,9 +32,11 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write 'src/**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "devDependencies": {
+    "gh-pages": "^1.1.0",
     "prettier": "^1.12.0"
   }
 }

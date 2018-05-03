@@ -18,7 +18,7 @@ const Header = ({ siteTitle }) => (
         padding: '1.45rem 1.0875rem'
       }}
       >
-      <VelocityTransitionGroup enter={{animation: "fadeIn", rotateZ: '45deg'}} duration={1000} runOnMount={true}>
+      <VelocityTransitionGroup enter={{animation: "fadeOut", rotateZ: '45deg'}} duration={1000} runOnMount={true}>
 
       <h1 style={{ margin: 0 }}>
         <Link

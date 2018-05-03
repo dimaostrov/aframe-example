@@ -1,30 +1,22 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Link from 'gatsby-link'
-import 'aframe';
-import 'aframe-particle-system-component';
-import { Entity, Scene } from 'aframe-react';
 
-import data from '../data/countries.json';
-
-
+import VR from '../components/vr'
 
 class VRScene extends React.Component {
-  render () {
-    const spheres = Object.entries(data.countries_msg_vol).map( (x, i) => {
-      return <Entity geometry={{primitive: 'sphere', radius: (x[1]/100).toString() }}
-       material={{color: x[1] > 100 ? 'red' : 'blue'}} 
-       position={{x: i, y: i*2, z: -i}}/>
-    });
+  render() {
     return (
-      <Scene>
-        {spheres}
-        <Entity light={{type: 'point'}}/>
-        <Entity gltf-model={{src: 'virtualcity.gltf'}}/>
-        <Entity text={{value: 'Hello, WebVR!'}}/>
-      </Scene>
-    );
+      <VR />
+    ) 
   }
 }
 
+export default VRScene
 
-export default VRScene;
+//position={{x: i*10 - 50, y: i, z: -x[1]/10}}
+//, radius: (x[1]/50).toString()
+/*
+const vr = this.state.loading ? (
+  <p>Loading...</p>
+) : <VR />
+*/
