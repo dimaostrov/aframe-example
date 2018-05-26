@@ -1,26 +1,5 @@
-# gatsby-starter-default
-The default Gatsby starter.
-
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/).
-
-## Install
-
-Make sure that you have the Gatsby CLI program installed:
-```sh
-npm install --global gatsby-cli
-```
-
-And run from your CLI:
-```sh
-gatsby new gatsby-example-site
-```
-
-Then you can run it by:
-```sh
-cd gatsby-example-site
-npm run develop
-```
-
-## Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+# Aframe example project
+Feeling confident with my skills I've decided to try out using A-frame to make 3d renders.
+I wanted to make each ball the size of their currency, but soon found out that bitcoin would overshadow the others.
+Also I've ran into a difficulty of not being able to render in window, so if you'd like to try it out you have to 
+`gatsby develop` in order to run it, you should also install gatsby-cli globally `npm i -g gatsby-cli`
